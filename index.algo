@@ -1,0 +1,20 @@
+
+//  function to test if a word is a palindrome
+FUNCTION  ispalindrome (STRING) : BOOLEAN    // result is a boolean, either true or false.
+
+    IF (str.length() == 0 || str.length() == 1) THEN
+        RETURN TRUE;    // if the string contains no character or a single character, it is a palindrome.
+
+
+    ELSE_IF (str.charAt(0) != str.charAt(str.length() - 1)) THEN
+        RETURN FALSE;  //we compare the characters located at the ends of the word, if different we stop.
+
+
+    // if equality, we test the rest of the word.
+
+    (str.charAt(0) == str.charAt(str.length() - 1)) THEN
+        RETURN str.slice(1, str.length()-1);   
+
+    ispalindrome(STRING)
+
+END_IF
