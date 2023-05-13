@@ -1,0 +1,30 @@
+ALGORITHM ispalindrome
+VAR
+    word : STRING;
+BEGIN
+    Read ("word") //Read the user's input
+
+    ispalindrome := TRUE  
+    i = 0  // the first character
+    j = string.length - 1
+
+    WHILE (i < j) DO
+        IF (str[i] != str[j]) THEN
+            ispalindrome = FALSE;
+        END_IF
+
+    i += 1 //increament i
+    j -= 1 //decreament j
+    END_WHILE
+
+    ispalindrome(STRING)
+
+    IF (ispalindrome := TRUE) THEN
+        Write(The word is a palindrome)
+    ELSE
+        Write(The word is not a palindrome)
+    END_IF
+
+END
+
+
